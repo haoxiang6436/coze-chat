@@ -36,10 +36,11 @@ const UpdateModel = () => {
 
 <style lang="scss" scoped>
 .dropdown {
-  position: fixed;
-  top: 5vh;
-  left: 50vw;
-  transform: translateX(-50%);
-  min-width: 460px;
+  // position: fixed;
+  // top: 5vh;
+  // left: 50vw;
+  // transform: translateX(-50%);
+  width: fit-content;
+  max-width: 320px;
 }
 </style>

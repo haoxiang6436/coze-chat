@@ -1,0 +1,22 @@
+{
+  "name": "coze-chat",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.7.3",
+    "sass": "^1.77.2",
+    "scss": "^0.2.4",
+    "unplugin-element-plus": "^0.8.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.0"
+  }
+}

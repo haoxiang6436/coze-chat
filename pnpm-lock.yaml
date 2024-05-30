@@ -11,15 +11,6 @@ importers:
       element-plus:
         specifier: ^2.7.3
         version: 2.7.3(vue@3.4.27)
-      sass:
-        specifier: ^1.77.2
-        version: 1.77.2
-      scss:
-        specifier: ^0.2.4
-        version: 0.2.4
-      unplugin-element-plus:
-        specifier: ^0.8.0
-        version: 0.8.0(rollup@4.18.0)
       vue:
         specifier: ^3.4.21
         version: 3.4.27
@@ -27,6 +18,12 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
         version: 5.0.4(vite@5.2.11(sass@1.77.2))(vue@3.4.27)
+      sass:
+        specifier: ^1.77.2
+        version: 1.77.2
+      unplugin-element-plus:
+        specifier: ^0.8.0
+        version: 0.8.0(rollup@4.18.0)
       vite:
         specifier: ^5.2.0
         version: 5.2.11(sass@1.77.2)
@@ -483,10 +480,6 @@ packages:
   normalize-wheel-es@1.2.0:
     resolution: {integrity: sha512-Wj7+EJQ8mSuXr2iWfnujrimU35R2W4FAErEyTmJoJ7ucwTn2hOUSsRehMb5RSYkxXGTM7Y9QpvPmp++w5ftoJw==}
 
-  ometa@0.2.2:
-    resolution: {integrity: sha512-LZuoK/yjU3FvrxPjUXUlZ1bavCfBPqauA7fsNdwi+AVhRdyk2IzgP3JRnevvjzQ6fKHdUw8YISshf53FmpHrng==}
-    engines: {node: '>= 0.2.0'}
-
   picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
 
@@ -511,10 +504,6 @@ packages:
     resolution: {integrity: sha512-eb4GZt1C3avsX3heBNlrc7I09nyT00IUuo4eFhAbeXWU2fvA7oXI53SxODVAA+zgZCk9aunAZgO+losjR3fAwA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
-
-  scss@0.2.4:
-    resolution: {integrity: sha512-4u8V87F+Q/upVhUmhPnB4C1R11xojkRkWjExL2v0CX2EXTg18VrKd+9JWoeyCp2VEMdSpJsyAvVU+rVjogh51A==}
-    engines: {node: '>= 0.2.0'}
 
   source-map-js@1.2.0:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
@@ -972,8 +961,6 @@ snapshots:
 
   normalize-wheel-es@1.2.0: {}
 
-  ometa@0.2.2: {}
-
   picocolors@1.0.1: {}
 
   picomatch@2.3.1: {}
@@ -1015,10 +1002,6 @@ snapshots:
       chokidar: 3.6.0
       immutable: 4.3.6
       source-map-js: 1.2.0
-
-  scss@0.2.4:
-    dependencies:
-      ometa: 0.2.2
 
   source-map-js@1.2.0: {}
 

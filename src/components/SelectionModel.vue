@@ -39,8 +39,9 @@ const UpdateModel = () => {
   // position: fixed;
   // top: 5vh;
   // left: 50vw;
-  // transform: translateX(-50%);
   width: fit-content;
   max-width: 320px;
+  transform: translateY(-11vh);
+
 }
 </style>

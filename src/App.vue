@@ -1,19 +1,22 @@
 <template>
   <div>
-    <SelectionModel @Update="model_update"></SelectionModel>
+    <SelectionModel @ModelUpdate="model_update"></SelectionModel>
   </div>
 </template>
 
 <script setup>
 import SelectionModel from './components/SelectionModel.vue'
 let client = null;
+let SelectModel = null;
 const model_update = (model) => {
-  console.log(model);
   init_chat(model)
-
 }
 const init_chat = async (model) => {
-  client?client.destroy():'';
+  if (model.model_id === SelectModel?.model_id) {
+    document.querySelector('.d723de158793d39f46fb').click()
+    return
+  }
+  client ? client.destroy() : '';
   client = new CozeWebSDK.WebChatClient({
     config: {
       bot_id: model.model_id,
@@ -24,11 +27,11 @@ const init_chat = async (model) => {
       lang: 'zh-CN'
     },
   });
-  setTimeout(()=>{
+  setTimeout(() => {
+    SelectModel = {...model}
     document.querySelector('.d723de158793d39f46fb').click()
-  },0)
+  }, 0)
 }
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

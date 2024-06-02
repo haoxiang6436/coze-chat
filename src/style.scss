@@ -12,12 +12,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body {
+  background: linear-gradient(0deg, #ffffff 0%, #ebebff);
+  opacity: 0;
+  animation: YuIHsien 0.6s ease-in-out forwards;
+}
+
+@keyframes YuIHsien {
+  to {
+    opacity: 1;
+  }
+}
 
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -31,13 +43,15 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
-  line-height: 1.1;
+  /* font-size: 2.5em; */
+  line-height: 1.2;
 }
+
 p {
   color: #666;
   line-height: 1.5em;
 }
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -49,9 +63,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -73,9 +89,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }

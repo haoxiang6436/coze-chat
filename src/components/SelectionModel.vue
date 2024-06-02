@@ -18,14 +18,15 @@ import { ref } from 'vue';
 
 import { ElSelect, ElOption, ElButton } from 'element-plus';
 const option = [
-  { model_id: '7373565628655058950', model_name: 'ChatGPT-4o' },
+  { model_id: '7375811069170237447', model_name: 'ChatGPT-4o' },
   { model_id: '7360933239483744257', model_name: 'GPT-4 Turbo (128k)' },
   { model_id: '7375791394633596945', model_name: 'Gemini 1.5 Pro (200k)' },
   { model_id: '7373569051249623045', model_name: 'Midjourney' },
   { model_id: '7373618024450473990', model_name: 'GPT-4o（编程增强）' },
   { model_id: '7373619343466872837', model_name: '多模型混合（论文增强）' },
+  { model_id: '7375810282905583633', model_name: 'GPT-4o（Github专家）' },
 ]
-const selected = ref('7373565628655058950');
+const selected = ref('7375811069170237447');
 
 const emits = defineEmits(['ModelUpdate'])
 

@@ -14,5 +14,5 @@ export const useUserDataStore = defineStore('UserData', () => {
     setUserConfig
   }
 }, {
-  persist: false
+  persist: true
 })

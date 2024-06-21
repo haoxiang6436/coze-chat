@@ -12,7 +12,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 # 指南
 
-## 0、模型id在哪？（详细的）
+## 1、模型id在哪？（详细的）
 1. 进入coze官网创建一个自己的bot  
    ![image](https://github.com/haoxiang6436/coze-chat/assets/91372056/fac67c0e-271c-4c35-afaf-c9ab6db60972)  
 2. 起一个好听的名字然后点击Confirm下一步  
@@ -26,7 +26,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 7. 复制地址栏中的19位BotId进行使用  
    ![image](https://github.com/haoxiang6436/coze-chat/assets/91372056/4ae55788-9232-4ac5-a6b1-f43e86e7f5ef)  
 
-## 1、导入的json格式
+## 2、导入的json格式
 ```json
 [
   {

@@ -6,9 +6,14 @@
 
 <script setup>
 import SelectionModel from './components/SelectionModel.vue'
+import { ElMessage  } from 'element-plus'
 let client = null;
 let SelectModel = null;
 const model_update = (model) => {
+  if (model.model_id.length !== 19) {
+    ElMessage.error('填写的模型ID有误（19位数字）')
+    return
+  }
   init_chat(model)
 }
 const init_chat = async (model) => {
@@ -28,7 +33,7 @@ const init_chat = async (model) => {
     },
   });
   setTimeout(() => {
-    SelectModel = {...model}
+    SelectModel = { ...model }
     document.querySelector('.d723de158793d39f46fb').click()
   }, 0)
 }

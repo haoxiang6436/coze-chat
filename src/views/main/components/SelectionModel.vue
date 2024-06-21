@@ -38,12 +38,12 @@ const AddUserInputNewBot = () => {
   ChatBotsStore.SelectedModel = ChatBotsStore.ChatBots[0].model_id
   UserAddModelRef.value.openDialog()
 }
+
 onMounted(() => {
   ChatBotsStore.SelectedModel = ChatBotsStore.ChatBots[0].model_id
-  console.log(UserDataStore.UserConfig.NewUsers);
   if (UserDataStore.UserConfig.NewUsers) {
-    ElMessageBox.alert('如果遇到AI回答为空，很可能由于作者账户token欠费，请前往coze创建机器人并勾选web sdk添加机器人id。并在添加模型中使用它。它是有免费额度的！', '提示', {
-      confirmButtonText: 'OK',
+    ElMessageBox.alert('由于本人的免费额度已无力支撑当前访问量，请前往coze.com（国内无法访问）创建机器人并在保存时勾选WebSDK，并在添加模型中填写ID，感谢您的理解🥲', '关于访问量激增的问题', {
+      confirmButtonText: '我知道了',
     })
   }
   UserDataStore.UserConfig.NewUsers = false

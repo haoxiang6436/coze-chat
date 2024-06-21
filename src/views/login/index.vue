@@ -1,7 +1,7 @@
 <template>
   <div class="LoginView">
     <h1>使用密钥登录</h1>
-    <el-input size="large" placeholder="输入密钥" v-model="FormData.password"></el-input>
+    <el-input size="large" placeholder="输入密钥" v-model="FormData.password" @keyup.enter="Login" ></el-input>
     <el-button @click="Login" type="primary" size="large" style="width: 100%;font-size: large;">登录</el-button>
   </div>
 </template>
@@ -19,7 +19,7 @@ const router = useRouter()
 const Login = () => {
   if (FormData.value.password === import.meta.env.VITE_SECRET_KEY_CODE) {
     UserDataStore.setUserConfig('SecretKeyCode', FormData.value.password)
-    ElMessage.success('登陆成功')
+    ElMessage.success('验证成功')
     router.replace('/');
     return
   }
@@ -35,6 +35,7 @@ const Login = () => {
   @media (max-width: 768px) {
     width: 70vw;
     height: 30vh;
+    max-height: 270px;
   }
 
   padding: 30px 50px;

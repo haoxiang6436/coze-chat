@@ -3,7 +3,8 @@ import { ref } from 'vue';
 
 export const useUserDataStore = defineStore('UserData', () => {
   const UserConfig = ref({
-    SecretKeyCode: ''
+    SecretKeyCode: '',
+    NewUsers:true,
   })
   const setUserConfig = (key, val) => {
     UserConfig.value[key] = val
@@ -14,5 +15,5 @@ export const useUserDataStore = defineStore('UserData', () => {
     setUserConfig
   }
 }, {
-  persist: true
+  persist: import.meta.env.PROD
 })

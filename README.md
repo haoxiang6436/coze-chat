@@ -8,8 +8,6 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 # 说明
 
-## 我的token被刷欠费了，建议使用自己的id（coze有免费额度）😭😭😭
-
 # 指南
 
 ## 1、模型id在哪？（详细的）
